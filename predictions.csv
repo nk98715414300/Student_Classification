@@ -1,0 +1,3 @@
+study_hours,attendance,previous_marks,prediction,result,prediction_time
+5.0,75.0,60.0,1,PASS,13-11-2026 12:22:07
+2.0,45.0,30.0,0,FAIL,13-11-2026 12:22:16
