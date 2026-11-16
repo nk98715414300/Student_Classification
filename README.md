@@ -1,9 +1,22 @@
-# Student Classification using Machine Learning
+Student Classification using Machine Learning
 
-## About
-A beginner-friendly Machine Learning project that predicts whether a student will Pass or Fail using Logistic Regression.
+About
 
-## Technologies
+A beginner-friendly Machine Learning project that predicts whether a student will Pass or Fail using different classification algorithms.
+
+The prediction is based on:
+
+- Study Hours
+- Attendance
+- Previous Marks
+
+Target variable:
+
+- "0" = Fail
+- "1" = Pass
+
+Technologies
+
 - Python
 - Pandas
 - NumPy
@@ -11,21 +24,44 @@ A beginner-friendly Machine Learning project that predicts whether a student wil
 - Scikit-learn
 - Joblib
 
-## Features
+Features
+
+Data Processing
+
 - Student dataset analysis
 - Data visualization
 - StandardScaler preprocessing
-- Logistic Regression classification
-- Model Pipeline
 - Input validation
-- Multiple student predictions
+
+Machine Learning Models
+
+- Logistic Regression
+- Decision Tree Classification
+- Random Forest Classification
+- Model Pipeline
+
+Model Evaluation
+
+- Accuracy score
+- Confusion matrix
+- Classification report
+- Feature importance
+- Cross-validation
+- Hyperparameter tuning using GridSearchCV
+- Model comparison
+
+Predictions
+
+- Single and multiple student predictions
+- Prediction probabilities
 - Save predictions in CSV
 - Prediction date and time
 - View student records
 - Visualize PASS/FAIL results
+- Save and load trained models
 
-## Project Structure
-```text
+Project Structure
+
 Student_Classification/
 ├── data/
 │   └── students.csv
@@ -33,40 +69,56 @@ Student_Classification/
 ├── predict.py
 ├── view_predictions.py
 ├── visualize_predictions.py
-├── student_pipeline.pkl
-├── predictions.csv
-└── requirements.txt
-```
+├── decision_tree.py
+├── predict_decision_tree.py
+├── visualize_decision_tree.py
+├── random_forest.py
+├── feature_importance.py
+├── compare_models.py
+├── cross_validation.py
+├── grid_search.py
+├── save_best_model.py
+├── predict_best_model.py
+├── requirements.txt
+└── README.md
 
-## Installation
+Note: Model files and prediction CSV files are generated when the corresponding scripts run.
 
-```bash
+Installation
+
 pip install -r requirements.txt
-```
 
-## Run the Project
+Run the Project
 
-```bash
+Logistic Regression
+
 python main.py
-```
-
-For predictions:
-
-```bash
 python predict.py
-```
 
-To view records:
+Decision Tree
 
-```bash
-python view_predictions.py
-```
+python decision_tree.py
+python predict_decision_tree.py
+python visualize_decision_tree.py
 
-To visualize results:
+Random Forest
 
-```bash
-python visualize_predictions.py
-```
+python random_forest.py
+python feature_importance.py
 
-## Important Note
-This project uses a small synthetic dataset for learning purposes. Its predictions are not reliable real-world student performance assessments.
+Model Comparison and Evaluation
+
+python compare_models.py
+python cross_validation.py
+python grid_search.py
+python save_best_model.py
+
+Prediction Using Tuned Model
+
+python predict_best_model.py
+
+Important Note
+
+This project uses a small synthetic dataset containing 16 student records for learning purposes. Its predictions and evaluation scores are not reliable real-world student performance assessments.
+
+This project is intended for educational and experimental use only.
