@@ -38,6 +38,7 @@ Machine Learning Models
 - Logistic Regression
 - Decision Tree Classification
 - Random Forest Classification
+- Gaussian Naive Bayes Classification
 - Model Pipeline
 
 Model Evaluation
@@ -46,7 +47,7 @@ Model Evaluation
 - Confusion matrix
 - Classification report
 - Feature importance
-- Cross-validation
+- Cross-validation (4-fold Stratified Cross-validation)
 - Hyperparameter tuning using GridSearchCV
 - Model comparison
 
@@ -86,6 +87,8 @@ Note: Model files and prediction CSV files are generated when the corresponding 
 
 Installation
 
+Install the required libraries:
+
 pip install -r requirements.txt
 
 Run the Project
@@ -112,6 +115,15 @@ python compare_models.py
 python cross_validation.py
 python grid_search.py
 python save_best_model.py
+
+The model comparison and cross-validation scripts evaluate:
+
+1. Logistic Regression
+2. Decision Tree
+3. Random Forest
+4. Gaussian Naive Bayes
+
+Gaussian Naive Bayes is used because the dataset contains numerical features.
 
 Prediction Using Tuned Model
 
