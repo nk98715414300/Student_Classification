@@ -22,6 +22,7 @@ Technologies
 - NumPy
 - Matplotlib
 - Scikit-learn
+- XGBoost
 - Joblib
 
 Features
@@ -39,6 +40,9 @@ Machine Learning Models
 - Decision Tree Classification
 - Random Forest Classification
 - Gaussian Naive Bayes Classification
+- AdaBoost Classifier
+- Gradient Boosting Classifier
+- XGBoost Classifier
 - Model Pipeline
 
 Model Evaluation
@@ -66,20 +70,29 @@ Project Structure
 Student_Classification/
 ├── data/
 │   └── students.csv
+│
 ├── main.py
 ├── predict.py
 ├── view_predictions.py
 ├── visualize_predictions.py
+│
 ├── decision_tree.py
 ├── predict_decision_tree.py
 ├── visualize_decision_tree.py
 ├── random_forest.py
 ├── feature_importance.py
+│
+├── naive_bayes.py
+├── adaboost.py
+├── gradient_boosting.py
+├── xgboost_model.py
+│
 ├── compare_models.py
 ├── cross_validation.py
 ├── grid_search.py
 ├── save_best_model.py
 ├── predict_best_model.py
+│
 ├── requirements.txt
 └── README.md
 
@@ -109,6 +122,22 @@ Random Forest
 python random_forest.py
 python feature_importance.py
 
+Naive Bayes
+
+python naive_bayes.py
+
+AdaBoost
+
+python adaboost.py
+
+Gradient Boosting
+
+python gradient_boosting
+
+XGBoost
+
+python xgboost_model.py
+
 Model Comparison and Evaluation
 
 python compare_models.py
@@ -122,6 +151,9 @@ The model comparison and cross-validation scripts evaluate:
 2. Decision Tree
 3. Random Forest
 4. Gaussian Naive Bayes
+5. AdaBoost
+6. Gradient Boosting
+7. XGBoost
 
 Gaussian Naive Bayes is used because the dataset contains numerical features.
 
